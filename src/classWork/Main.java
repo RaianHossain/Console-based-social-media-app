@@ -2,6 +2,8 @@ package classWork;
 
 public class Main {
 	public static void main(String args[]) {
+		MySqlConnection conn = new MySqlConnection();
+		conn.connect();
 		RegularUser raian = new RegularUser("Raian Hossain", "12345678");
 		RegularUser robin = new RegularUser("Parvej Robin", "12345678");
 		User admin = new Admin("Shazzad Hossain", "12345678", "admin");
